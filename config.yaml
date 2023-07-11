@@ -1,0 +1,130 @@
+title: myDid Status Page
+buildFuture: true
+languageCode: en
+defaultContentLanguage: en
+baseURL: https://mydidstatus.com
+enableGitInfo: true
+params:
+  categories:
+    - name: Core services
+      description: The main services for the mobile application to work.
+      closed: false
+    - name: Mobile application
+      description: The mobile application availability.
+      closed: false
+    - name: Issuer platforms
+      description: Issuer dashboards, payments, etc.
+      closed: false
+    - name: Help and support services
+      description: Main website, Helpdesk, Support, etc.
+      closed: false
+    - name: Email servers
+      description: email servers for myDid team, or for applications
+      closed: false
+    - name: Other
+      untitled: true
+
+  systems:
+    - name: Main APIs
+      description: Main APIs for the applications to work correctly.
+      category: Core services
+    - name: Demo
+      description: Authentication demo.
+      category: Core services
+      link: http://demo.xsl-labs.io/
+    - name: Blockchain synchronization
+      description: Used to sync wallet status on mobile apps.
+      category: Core services
+    - name: Discord bot
+      description: Used to authenticate users on our official Discord.
+      category: Core services
+    - name: Nostr relay
+      description: Used to exchange badges within the applications.
+      category: Core services
+
+    - name: Android application
+      description: Main myDid Android application.
+      category: Mobile application
+      link: https://play.google.com/store/apps/details?id=com.mydid.wallet
+    - name: iOS application
+      description: Main myDid iOS application.
+      category: Mobile application
+      link: https://apps.apple.com/gr/app/mydid-auth/id1630348267
+
+    - name: Issuer dashboard
+      description: Main issuer dashboard
+      category: Issuer platforms
+
+    - name: Website
+      description: mydid.com main website.
+      category: Help and support services
+      link: https://mydid.com/
+    - name: Helpdesk
+      description: Platform to answer support tickets.
+      category: Help and support services
+      link: mailto:support@mydid.com
+    - name: Support
+      description: Platform to guide users into myDid and self-sovereign identity.
+      category: Help and support services
+      link: https://support.mydid.com/
+
+    - name: Automated email server
+      description: Mail server to send application emails.
+      category: Email servers
+    - name: Main email server
+      description: Mail server for the team.
+      category: Email servers
+
+  dateFormat: January 2, 2006 at 3:04 PM UTC
+  shortDateFormat: 15:04 UTC — Jan 2
+  useRelativeTime: true
+  skipSeconds: false
+  enableLastMod: true
+  useLargeHeaderDesign: false
+  incidentHistoryFormat: "yearly"
+  disableIncidentHistory: false
+  disableDarkMode: false
+  useLogo: true
+  logo: logo.png
+  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  disableComplexCalculations: false
+  incidentPostsPerPage: 10
+  brand: "#0a0c0f"
+  ok: "#008000"
+  disrupted: "#cc4400"
+  down: "#e60000"
+  notice: "#24478f"
+  alwaysKeepBrandColor: true
+  headerTextColor: white
+  googleAnalytics: UA-00000000-1
+
+theme: cstate
+
+preserveTaxonomyNames: true
+
+taxonomies:
+  affected: affected
+
+outputs:
+  page:
+    - html
+    - json
+  section:
+    - html
+    - json
+    - rss
+  home:
+    - html
+    - json
+    - rss
+    - svg
+  term:
+    - html
+    - json
+    - rss
+    - svg
+
+outputFormats:
+  svg:
+    isPlainText: true
+    mediaType: image/svg+xml
