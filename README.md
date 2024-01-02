@@ -28,7 +28,7 @@ affected:
   - Nostr relay
   - Android application
   - iOS application
-  - Issuer dashboard
+  - Community Studio
   - Website
   - Helpdesk
   - Support
@@ -55,7 +55,7 @@ affected:
   - Nostr relay
   - Android application
   - iOS application
-  - Issuer dashboard
+  - Community Studio
   - Website
   - Helpdesk
   - Support
