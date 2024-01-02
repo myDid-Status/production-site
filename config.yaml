@@ -51,7 +51,7 @@ params:
       category: Mobile application
       link: https://apps.apple.com/gr/app/mydid-auth/id1630348267
 
-    - name: Issuer dashboard
+    - name: Community Studio
       description: Main issuer dashboard
       category: Issuer platforms
 
