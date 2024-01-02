@@ -1,0 +1,12 @@
+---
+title: Planned maintenance
+date: 2023-12-23 9:00:00
+resolved: false
+resolvedWhen: 2024-02-01 9:00:00
+severity: notice
+affected:
+  - Demo
+section: issue
+---
+
+*New app* - Demo no longer work with the new app for now. {{< track "2023-12-22 9:00:00" >}}
